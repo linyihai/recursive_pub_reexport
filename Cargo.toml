@@ -1,0 +1,9 @@
+cargo-features = ["public-dependency"]
+
+[package]
+name = "simple"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pub_dep = { version = "0.1.0", path = "./crates/pub_dep" }

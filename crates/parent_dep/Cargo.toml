@@ -1,0 +1,9 @@
+cargo-features = ["public-dependency"]
+
+[package]
+name = "parent_dep"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+grandparent_dep = { version = "0.1.0", path = "../grandparent_dep", public = true }
